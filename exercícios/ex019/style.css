@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+/*
+ Tudo em HTML que for id = em CSS é # (Só pode usar uma vez em cada documento HTML)
+ Tudo em HTML que for class = em CSS é . (pode usar quantos quiser)
+*/
+
+body {
+    background-color: rgba(243, 243, 226, 0.836);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: rgb(18, 54, 32);
+}
+
+h1#principal {
+    text-align: center;
+    background-color: darkcyan;
+    color: white;
+}
+
+h2 {
+    color: rgb(48, 92, 65);
+}
+
+p {
+    text-align: justify;
+}
+
+.basico {
+    color: teal;
+}
+
+.intermediario {
+    color: rgb(184, 184, 48);
+}
+
+.avancado {
+    color: tomato;
+}
+
+.destaque {
+    background-color: wheat;
+}

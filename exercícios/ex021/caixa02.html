@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font: 1em sans-serif;
+            background-color: rgb(240, 211, 132);
+            margin: 0px;
+        }
+        header {
+            background-color: whitesmoke;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 2px 2px rgb(175, 171, 171);
+        }
+
+        h1 {
+            font-family: cursive;
+
+        }
+        nav {
+            background-color: rgb(107, 107, 107);
+            padding: 3px;
+            box-shadow: 3px 5px 6px 2px rgba(0, 0, 0, 0.486);
+        }
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+        main {
+            background-color: whitesmoke;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 2px 2px rgb(175, 171, 171);
+        }
+        article {
+            background-color: lightgray;
+            padding: 5px;
+        }
+        article > aside {
+            background-color: rgb(116, 115, 115);
+            padding: 1px 3px 1px 3px;
+        }
+        footer {
+           /* background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 100px;
+            line-height: 100px;*/
+            position: absolute;
+            bottom: 0;
+            background-color: gray;
+            color: #FFF;
+            width: 100%;
+            height: 100px;    
+            text-align: center;
+            line-height: 100px;
+        }
+        footer > p {
+            margin: 0px;
+        }
+        div#bola {
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            border-radius: 50%;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Esportes Política Tecnologia</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium deserunt cupiditate maiores, minus corrupti nesciunt rerum pariatur unde sequi voluptatem modi reiciendis minima cumque numquam, placeat quam eligendi. Sequi, quo?</p>
+                <aside>
+                    <p>Artigo escrito por Kaio Eduardo</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por KeInfotech</p>
+    </footer>
+    <div id="bola">
+        
+    </div>
+    
+</body>
+</html>
