@@ -13,6 +13,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative; /*necessário para o efeito de colar o título*/
         }
 
         td,th {
@@ -32,6 +33,16 @@
             background-color: gray;
             color: white;
         }
+
+        thead > tr > th { /*função de colar o titulo*/
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
+        tbody > tr:nth-child(2n) { /*odd par - even impar ou 2n ou 2n-1*/
+            background-color: lightgray;
+        }
     </style>
 </head>
 <body>
@@ -43,8 +54,8 @@
         </caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -60,12 +71,24 @@
                 <td>Rio de Janeiro</td>
                 <td>17 463 349</td>
             </tr>
+            <tr>
+                <td>Bahia</td>
+                <td>14 985 284</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td>11 597 484</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td>11 466 630</td>
+            </tr>
 
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
-                <td><strong>85 524 404</strong></td>
+                <th scope="row">Total de habitantes</th>
+                <td><strong>123 573 802</strong></td>
             </tr>
         </tfoot>
     </table>
